@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.materials {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .materials input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  .materials:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .materials input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .materials input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .materials .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.process{
+    background: url('../images/burger-bg-img.jpg')no-repeat center center/cover ;
+    border-radius: 20px;
+    opacity: 1;
+    width: 100vh;
+    height: auto;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+p{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.meatOrchicken{
+    margin-top: 40px;
+}
+.meatballCookOption{
+    margin-top: 20px;
+}
+.chickenCookOption{
+    margin-top: 20px;
+}
+
+button{
+    background-color: #fa9b28;
+    border: none;
+    border-radius:10px !important;
+    color: black;
+    font-weight: 600;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#takeOrderBtn{
+    background: url('../images/order-icon.jpg')no-repeat center center/cover ;
+    color: black;
+    width: 150px;
+    height: 130px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: transform .5s;
+}
+#takeOrderBtn:hover{
+    transform: scale(1.2);
+}
+#takeOrderBtn:disabled{
+    transform: scale(1);
+    color: #333;
+}
+#meatball:disabled,
+#underdone:disabled,
+#medium:disabled,
+#overcooked:disabled,
+#chicken:disabled,
+#cookChicken:disabled
+{
+    background-color: #333;
+    color: white;
+}
+
+button:hover{
+   background-color: rgb(252, 164, 0)
+}

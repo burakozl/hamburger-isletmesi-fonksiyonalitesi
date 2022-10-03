@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Burger</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 style="margin-bottom: 20px;">Sipariş Ekranı</h1>
+            <div class="col-md-3">
+                <label class="materials">Hepsi Olsun
+                    <input id="all" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>                            
+            </div>
+            <div class="col-md-3">            
+                <label class="materials">Marul Turşu
+                    <input id="marulTursu" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="materials">Paket Sos
+                    <input id="paketSos" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>              
+            </div>
+            <div class="col-md-3">
+                <label class="materials">Soğan
+                    <input id="sogan" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="materials">Domates
+                    <input id="domates" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="col-md-3">
+                <label class="materials">Patates
+                    <input id="patates" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="materials">Cola
+                    <input id="cola" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="process col-md-12">
+                <p id="transactionProcesses"></p>
+            </div>
+        </div> 
+        <div class="buttons">
+            <button id="takeOrderBtn">Sipariş Al</button>
+            <div class="meatOrchicken">
+                <button id="meatball">Köfte</button>
+                <button id="chicken">Tavuk</button>
+                <button id="resetStorage">Stoğu Doldur</button>
+            </div>
+            <div class="meatballCookOption">
+                <button id="underdone">Az Pişmiş</button>
+                <button id="medium">Orta Pişmiş</button>
+                <button id="overcooked">Çok Pişmiş</button>
+            </div>
+            <div class="chickenCookOption">
+                <button id="cookChicken">Tavuk Pişir</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <script>var exports = {};</script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
