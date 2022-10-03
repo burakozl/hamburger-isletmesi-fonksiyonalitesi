@@ -1,3 +1,3 @@
 # hamburger-isletmesi-fonksiyonalitesi
 
-# This project developed with typescript
+## This project developed with typescript
